@@ -206,11 +206,9 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
 .about .wrap .about-me p {
   line-height: 23px;
   color: white;
+  font-weight: 200;
 }
 .about .wrap .about-me .name {
-  margin-top: 15px;
-}
-.about .wrap .about-me .caption {
   margin-top: 15px;
 }
 .about .wrap .tech {
@@ -284,6 +282,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   font-size: 0.6rem;
   padding: 8px 12px;
   margin-left: 10px;
+  margin-top: 5px;
   background-color: #171717;
   color: white;
 }

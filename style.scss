@@ -225,11 +225,9 @@ nav {
             p {
                 line-height: 23px;  
                 color: $sub-color;
+                font-weight: 200;
             }
             .name {
-                margin-top: 15px;
-            }
-            .caption  {
                 margin-top: 15px;
             }
         }
@@ -308,6 +306,7 @@ nav {
                 font-size: .6rem;
                 padding: 8px 12px;
                 margin-left: 10px;
+                margin-top: 5px;
                 background-color: $primary-color;
                 color: $sub-color;
             }
