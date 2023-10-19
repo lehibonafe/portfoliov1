@@ -156,7 +156,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
 }
 .about .container {
   width: 100%;
-  height: 650px;
+  height: 750px;
   padding: 50px 30px 100px;
   background-color: #5C33F6;
 }
@@ -404,7 +404,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
     height: auto;
   }
   .about .about-me {
-    margin-top: 70px;
+    margin-top: 90px;
   }
 }
 @media (max-width: 769px) {
