@@ -118,6 +118,30 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   font-weight: bold;
   color: #171717;
 }
+.hero .load-circle {
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  background-color: #171717;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.hero .load-circle:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.hero .load-circle:nth-child(3) {
+  animation-delay: 0.8s;
+}
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(10px);
+  }
+}
 .hero p {
   font-size: 1rem;
   margin-top: 20px;
