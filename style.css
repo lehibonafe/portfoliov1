@@ -22,7 +22,7 @@ nav {
   width: 100%;
   z-index: 1;
   transition: 0.2s ease-in-out;
-  background-color: #EEEEEE;
+  background-color: #2F2E41;
   box-shadow: rgba(0, 0, 0, 0.1019607843) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 nav ul {
@@ -33,7 +33,7 @@ nav li {
 }
 nav li a {
   text-decoration: none;
-  color: #171717;
+  color: #e6e6e6;
   letter-spacing: 1px;
   padding: 15px 10px;
   margin: 0 20px;
@@ -74,7 +74,7 @@ nav .menubar .container span {
   position: absolute;
   height: 2px;
   width: 50%;
-  background-color: #171717;
+  background-color: #e6e6e6;
   transition: 0.25s ease-in-out;
 }
 nav .menubar .container span:nth-child(even) {
@@ -116,13 +116,13 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   max-width: 500px;
   line-height: 48px;
   font-weight: bold;
-  color: #171717;
+  color: #2F2E41;
 }
 .hero .load-circle {
   width: 8px;
   height: 8px;
   margin: 0 3px;
-  background-color: #171717;
+  background-color: #2F2E41;
   border-radius: 50%;
   display: inline-block;
   animation-name: dots;
@@ -147,7 +147,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   margin-top: 20px;
   width: 310px;
   line-height: 23px;
-  color: #444444;
+  color: #3f3d56;
 }
 .hero .btn-projects {
   margin-top: 40px;
@@ -200,7 +200,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   height: 3px;
   bottom: -10px;
   left: 0;
-  background-color: #171717;
+  background-color: #2F2E41;
 }
 .about .wrap {
   display: grid;
@@ -215,7 +215,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   width: 260px;
   height: 230px;
   margin: auto;
-  background-color: #444444;
+  background-color: #3f3d56;
 }
 .about .wrap .profile img {
   width: 100%;
@@ -307,7 +307,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   padding: 8px 12px;
   margin-left: 10px;
   margin-top: 5px;
-  background-color: #171717;
+  background-color: #2F2E41;
   color: white;
 }
 .projects .container .btn {
@@ -330,10 +330,10 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   margin: 0 10px;
 }
 .projects .container .demo a {
-  background-color: #171717;
+  background-color: #2F2E41;
 }
 .projects .container .code a {
-  background-color: #171717;
+  background-color: #2F2E41;
 }
 
 .contact {
@@ -392,7 +392,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   font-size: 0.9rem;
 }
 .contact .details .info a {
-  color: #171717;
+  color: #2F2E41;
   text-decoration: none;
 }
 .contact .details .info a:hover {
@@ -409,7 +409,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   display: flex;
 }
 .contact .social-media .links a {
-  color: #171717;
+  color: #2F2E41;
   font-size: 2rem;
 }
 .contact .social-media .links a:hover {

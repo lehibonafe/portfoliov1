@@ -1,5 +1,5 @@
-$primary-color: #171717;
-$secondary-color: #444444;
+$primary-color: #2F2E41;
+$secondary-color: #3f3d56;
 $tertiary-color: #5C33F6;
 $sub-color: white;
 
@@ -27,7 +27,7 @@ nav {
     width: 100%;
     z-index: 1;
     transition: .2s ease-in-out;
-    background-color: #EEEEEE;
+    background-color: $primary-color;
     box-shadow: #0000001a 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     
     ul {
@@ -39,7 +39,7 @@ nav {
     
     li a {
         text-decoration: none;
-        color: $primary-color;
+        color: #e6e6e6;
         letter-spacing: 1px;
         padding: 15px 10px;
         margin: 0 20px;
@@ -82,7 +82,7 @@ nav {
                 position: absolute;
                 height: 2px;
                 width: 50%;
-                background-color: $primary-color;
+                background-color: #e6e6e6;
                 -webkit-transition: .25s ease-in-out;
                 -moz-transition: .25s ease-in-out;
                 -o-transition: .25s ease-in-out;
