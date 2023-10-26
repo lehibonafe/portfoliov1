@@ -40,25 +40,19 @@
         </div>
     </nav>
     <!-- Hero section -->
+    <div class="cover"></div>
     <section id="hero" class="hero section">
-        <div class="container">
-            <div class="left" data-aos="fade-up">
-                <h1>
-                    Work in Progress
-                    <span class="load-circle"></span>
-                    <span class="load-circle"></span>
-                    <span class="load-circle"></span>
-                </h1>
-                    <p>Sometimes the idea behind a program is one small creative effort. <i class="fas fa-code"></i></p>
-                <div class="btn-projects">
-                    <a href="LehiBonafe - CV.pdf" target="_blank">Download CV</a>
+        <div class="container" data-aos="fade-up">
+            <div class="heading">
+                <h1>Welcome to my website!</h1>
+                <p>Sometimes the idea behind a program is one small creative effort.</p>
+                <div class="btn">
+                    <a href="#about" target="about">Explore <span><i class="fas fa-caret-down"></i></span></a>
                 </div>
-            </div>
-            <div class="right" data-aos="fade-up">
-                <img src="images/ml.svg" alt="web development">
             </div>
         </div>
     </section>
+    
     <!-- About me section -->
     <section id="about" class="about section">
         <div class="container" data-aos="fade-up">
@@ -73,8 +67,8 @@
                 </div>
                 <div class="about-me" data-aos="fade-up">
                     <p class="name">
-                       Hello, I'm Lehi. I am a fullstack developer from Catbalogan City.
-                       I build modern, elegant and responsive websites. Also, I like to play video games and watch movies.
+                        Hello, I'm Lehi, a software developer from the Philippines. I love making modern and stylish websites for people and businesses.
+                         I'm good at both designing and coding, so I turn ideas into beautiful websites.
                     </p>
                     
                     <div class="tech">
@@ -198,17 +192,23 @@
     <section class="contact section" id="contact">
         <div class="container">
             <h1 data-aos="fade-up">contact</h1>
-            <div class="wrap">
-                <div class="job" data-aos="fade-up">
-                    <p class="header">
-                        Let's talk about you.
-                    </p>
-                    <p class="description">I am currently looking for new opportunities, my inbox is always open. If you have any job opportunities 
-                        or business don't hesitate to contact me.
-                    </p>
-                </div>
+
+            <di class="wrap">
+                <form action="">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name">
+
+                    <label for="email">Email Address: </label>
+                    <input type="text" name="email">
+
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="" cols="46" rows="8"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
                 <div class="details" data-aos="fade-up">
-                    <div>
+
+                    <div class="email-phone">
                         <span class="header">INBOX</span>
                         <div class="info">
                             <p>
@@ -217,6 +217,7 @@
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bonafe.lehi@gmail.com">bonafe.lehi@gmail.com</a>
                         </div>
                     </div>
+                    
                     <div class="social-media">
                         <span class="header">SOCIAL</span>
                         <div class="links">
@@ -235,12 +236,13 @@
             </div>
 
         </div>
-        <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5C33F6" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,261.3C384,288,480,288,576,277.3C672,267,768,245,864,208C960,171,1056,117,1152,96C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#082F49" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,261.3C384,288,480,288,576,277.3C672,267,768,245,864,208C960,171,1056,117,1152,96C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
 </body>
 <script src="script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script>
     AOS.init({
     duration: 1000, // values from 0 to 3000, with step 50ms

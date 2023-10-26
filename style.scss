@@ -1,7 +1,9 @@
-$primary-color: #2F2E41;
-$secondary-color: #3f3d56;
-$tertiary-color: #5C33F6;
-$sub-color: white;
+
+
+$primary-color: #082F49;
+$secondary-color: #155E75;
+$tertiary-color: #06B6D4;
+$sub-color: #E0F2FE;
 
 * {
     margin: 0;
@@ -12,6 +14,7 @@ $sub-color: white;
 
 body {
     position: relative;
+    background-color: $sub-color;
 }
 
 nav {
@@ -39,16 +42,16 @@ nav {
     
     li a {
         text-decoration: none;
-        color: #e6e6e6;
+        color: $sub-color;
         letter-spacing: 1px;
         padding: 15px 10px;
         margin: 0 20px;
         &.active {
-            border-bottom: 2px solid $tertiary-color;
+            border-bottom: 4px solid $tertiary-color;
             color: $tertiary-color;
         }
         &:hover {
-            color: #5C33F6;
+            color: $secondary-color;
         }
         
     }
@@ -80,9 +83,9 @@ nav {
                 z-index: -2;
                 display: block;
                 position: absolute;
-                height: 2px;
+                height: 3px;
                 width: 50%;
-                background-color: #e6e6e6;
+                background-color: $sub-color;
                 -webkit-transition: .25s ease-in-out;
                 -moz-transition: .25s ease-in-out;
                 -o-transition: .25s ease-in-out;
@@ -112,84 +115,63 @@ nav {
 .projects h1, .about h1, .contact h1{
     font-size: 2rem;
     letter-spacing: 2px;
+    color: $primary-color;
+}
+.cover {
+    width: 100%;
+    height: 1400px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    background-image: url('./images/cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.75;
+    
 }
 .hero {
     max-width: 1300px;
     padding: 120px 30px 30px 30px;
     height: 700px;
     margin: auto;
-    overflow: hidden;
     
-    .container {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .heading h1 {
+        font-size: 6vh;
     }
-    h1 {
-        font-size: 2.5rem;
-        max-width: 500px;
-        line-height: 48px;
-        font-weight: bold;
-        color: $primary-color;
+    .heading p {
+        max-width: 350px;
+        margin: 30px auto;
     }
-    .load-circle {
-        width: 8px;
-        height: 8px;
-        margin: 0 3px;
-        background-color: $primary-color;
-        border-radius: 50%;
-        display: inline-block;
-        animation-name: dots;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }
-    .load-circle:nth-child(2){
-        animation-delay: 0.4s;
-    }
-    .load-circle:nth-child(3){
-        animation-delay: 0.8s;
-    }
-    @keyframes dots {
-        50% {
-            opacity: 0;
-            transform: scale(0.7) translateY(10px);
-        }       
-    }
-
-    p {
-        font-size: 1rem;
-        margin-top: 20px;
-        width: 310px;
-        line-height: 23px;
-        color: $secondary-color;
-    }
-    .btn-projects {
-        margin-top: 40px;
-
+    .heading .btn {
+        margin-top: 30px;
+        
         a {
             width: 100px;
             font-size: .9rem;
             letter-spacing: 1px;
-            color: white;
+            color: $sub-color;
             padding: 12px 19.2px;
             text-decoration: none;
-            background-color: $tertiary-color;
+            background-color: $primary-color;
             transition: .3s;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                color: $tertiary-color;
                 transition: .3s;
             }
         }
     }
-    .left {
-        padding-top: 50px;
-        flex: 1;
+    .container {
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .right {
-        flex: 1;
-    }
+    
    
 }
 
@@ -201,7 +183,7 @@ nav {
         width: 100%;
         height: 750px;
         padding: 50px 30px 100px;
-        background-color: $tertiary-color;
+        background-color: $primary-color;
     }
     .header {
         max-width: 1250px;
@@ -218,7 +200,7 @@ nav {
             height: 3px;
             bottom: -10px;
             left: 0;
-            background-color: $primary-color;
+            background-color: $tertiary-color;
         }
     }
     .wrap{
@@ -234,7 +216,7 @@ nav {
                 width: 260px;
                 height: 230px;
                 margin: auto;
-                background-color: $secondary-color;
+                background-color: $tertiary-color;
 
             }
             img {
@@ -249,9 +231,10 @@ nav {
             padding-left: 30px;
 
             p {
-                line-height: 23px;  
+                line-height: 27px;  
                 color: $sub-color;
-                font-weight: 200;
+                font-weight: lighter;
+                font-size: 16px;
             }
             .name {
                 margin-top: 15px;
@@ -266,7 +249,8 @@ nav {
             display: flex;
             color: $sub-color;
             font-size: .9rem;
-            
+            font-size: 16px;
+
             .left div, .right div {
                 margin: 8px;
             }
@@ -298,19 +282,18 @@ nav {
         margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-flow: wrap row;
         width: 100%;
 
         > div {
-            width: 300px;
+            max-width: 270px;
             height: 320px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             position: relative;
             margin: 10px 10px;
-            background-color: $tertiary-color;
+            background-color: $primary-color;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
         }
         img {
@@ -333,7 +316,7 @@ nav {
                 padding: 8px 12px;
                 margin-left: 10px;
                 margin-top: 5px;
-                background-color: $primary-color;
+                background-color: $secondary-color;
                 color: $sub-color;
             }
 
@@ -349,20 +332,20 @@ nav {
         a {
             padding: 8px 15px;
             text-decoration: none;
-            color: white;
+            color: $sub-color;
 
             &:hover {
-                color: $tertiary-color;
+                color: $secondary-color;
             }
         }
         .demo {
             margin: 0 10px;
         }
         .demo a {
-            background-color: $primary-color
+            background-color: $tertiary-color;
         }
         .code a {
-            background-color: $primary-color;
+            background-color: $tertiary-color;
         }
 
     }
@@ -372,14 +355,65 @@ nav {
     margin-top: 150px;
     width: 100%;
     position: relative;
+    height: auto;
 
     .container {
         max-width: 1300px;
         margin: auto;
         padding: 0 30px;
-        height: 600px;
-
+        height: 700px;
     }
+    .wrap {
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        
+    }
+    form {
+        max-width: 400px;
+        padding: 0 20px;
+        
+
+        label {
+            color: $secondary-color;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid $tertiary-color;
+            box-sizing: border-box;
+            color: $primary-color;
+            background-color: #f5faff;
+
+          }
+        
+          input[type=submit] {
+            width: 30%;
+            background-color: $primary-color;
+            color: $sub-color;
+            padding: 12px 18px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                color: $tertiary-color;
+            }
+          }
+          textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 8px 0;
+            border: 1px solid $tertiary-color;
+            color: $primary-color;
+            background-color: #f5faff;
+          }
+    }
+
+
     h1 {
         position: relative;
         width: 100px;
@@ -393,73 +427,61 @@ nav {
             background-color: $tertiary-color;
         }
     }
-    .wrap {
-        padding-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1000px;
-        margin: auto;
-    }
-    .job {
-        width: 500px;
-        margin-bottom: 25px;
-        .header {
-            color: $tertiary-color;
-            font-size: 1.7rem;
-
-        }
-        .description{
-            margin-top: 15px;
-            max-width: 350px;
-            font-size: .8rem;
-            line-height: 20px;
-        }
-    }
 
     .details {
+        width: 400px;
+        padding: 0 20px;
+        margin-top: 23px;
         .header {
             font-size: .9rem;
             letter-spacing: 3px;
             font-weight: bold;
+            color: $secondary-color;
         }
         .info {
-            margin-top: 10px;
             font-size: .9rem;
-            a {
+            color: $primary-color; 
+            p {
+                margin-top: 10px;
+            }
+            a{
                 color: $primary-color;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                }
             }
         }
-    }
-    .social-media{
-        margin-top: 30px;
 
-        p {
-            font-size: 17px;
-        }
-        .links{
-            margin-top: 10px;
-            display: flex;
-            a {
-                color: $primary-color;
-                font-size: 2rem;  
+        .social-media{
+            margin-top: 30px;
+            p {
+                font-size: 17px;
+            }
+            .links{
+                margin-top: 10px;
+                display: flex;
+                flex-wrap: wrap;
+    
+                div:nth-child(2), div:nth-child(3){
+                    margin-left: 10px;
+                }
+    
+                a {
+                    color: $primary-color;
+                    font-size: 2rem;  
+                    
+                    &:hover {
+                        color: $tertiary-color;
+                    }
+                }
                 
-                &:hover {
-                    color: $tertiary-color;
-                }
-            }
-            .facebook, .github, .twitter{
-                margin-left: 20px;
             }
         }
     }
+    
     #wave {
         position: absolute;
         bottom: 0;
+        z-index: -1;
+
+
     }
     
 }
@@ -522,6 +544,7 @@ nav {
                 justify-content: center;
             } 
         }
+       
     } 
 }
 
