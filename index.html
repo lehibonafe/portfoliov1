@@ -204,7 +204,8 @@
             <h1 data-aos="fade-up">contact</h1>
 
             <di class="wrap">
-                <form action="" data-aos="fade-up">
+
+                <form id="form" data-aos="fade-up">
                     <label for="name">Name: </label>
                     <input type="text" name="name">
 
@@ -214,8 +215,9 @@
                     <label for="message">Message: </label>
                     <textarea name="message" id="" cols="46" rows="8"></textarea>
 
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id="button">
                 </form>
+
                 <div class="details" data-aos="fade-up">
 
                     <div class="email-phone">
@@ -251,6 +253,11 @@
 
 </body>
 <script src="script.js"></script>
+<script src="email.js"></script>
+<script type="text/javascript">
+    (function () { emailjs.init('sRAQeU1PezObodF-0'); });
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script>
