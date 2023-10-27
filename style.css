@@ -17,7 +17,6 @@ nav {
   padding: 0 100px;
   align-items: center;
   height: 55px;
-  font-size: 1rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -38,9 +37,10 @@ nav li a {
   letter-spacing: 1px;
   padding: 15px 10px;
   margin: 0 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 nav li a.active {
-  border-bottom: 4px solid #06B6D4;
   color: #06B6D4;
 }
 nav li a:hover {
@@ -119,18 +119,19 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   align-items: baseline;
   display: flex;
   overflow: hidden;
+  padding: 10px 0;
 }
 .hero .typewrite .static {
   color: #082F49;
   font-size: 30px;
-  width: 70px;
+  width: 100px;
   overflow: hidden;
 }
 .hero .typewrite .dynamic {
   height: 90px;
   line-height: 90px;
   overflow: hidden;
-  margin-left: 10px;
+  font-weight: bold;
 }
 .hero .typewrite li {
   list-style-type: none;
@@ -210,6 +211,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
 .about {
   padding-top: 50px;
   width: 100%;
+  overflow: hidden;
 }
 .about .container {
   width: 100%;
@@ -245,8 +247,8 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
 }
 .about .wrap .profile .overlay {
   position: relative;
-  width: 260px;
-  height: 230px;
+  max-width: 300px;
+  height: 270px;
   margin: auto;
   background-color: #06B6D4;
 }
@@ -258,13 +260,13 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .about .wrap .about-me {
-  padding-left: 30px;
+  padding-left: 20px;
 }
 .about .wrap .about-me p {
-  line-height: 27px;
+  line-height: 30px;
   color: #E0F2FE;
-  font-weight: lighter;
-  font-size: 16px;
+  font-size: 1.3rem;
+  font-weight: 100;
 }
 .about .wrap .about-me .name {
   margin-top: 15px;
@@ -276,8 +278,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   margin-top: 10px;
   display: flex;
   color: #E0F2FE;
-  font-size: 0.9rem;
-  font-size: 16px;
+  font-weight: 300;
 }
 .about .wrap .skills .left div, .about .wrap .skills .right div {
   margin: 8px;
@@ -414,6 +415,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   margin: 8px 0;
   border: none;
   cursor: pointer;
+  float: right;
 }
 .contact form input[type=submit]:hover {
   color: #06B6D4;
@@ -464,7 +466,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   margin-top: 30px;
 }
 .contact .details .social-media p {
-  font-size: 17px;
+  font-size: 18px;
 }
 .contact .details .social-media .links {
   margin-top: 10px;
@@ -476,15 +478,20 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
 }
 .contact .details .social-media .links a {
   color: #082F49;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 .contact .details .social-media .links a:hover {
   color: #06B6D4;
 }
-.contact #wave {
+.contact .wave {
+  margin-top: 20px;
+  width: 100%;
   position: absolute;
-  bottom: 0;
   z-index: -1;
+}
+.contact .wave #wave {
+  bottom: 0;
+  position: absolute;
 }
 
 @media (max-width: 676px) {
@@ -492,7 +499,13 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
     height: auto;
   }
   .about .about-me {
-    margin-top: 90px;
+    margin-top: 120px;
+  }
+}
+@media (max-width: 450px) {
+  .programmer {
+    width: 360px;
+    padding-top: 60px;
   }
 }
 @media (max-width: 769px) {
@@ -526,21 +539,6 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   }
   .hero .container {
     flex-direction: column-reverse;
-    align-items: flex-start;
-  }
-  .hero .container .left {
-    width: 100%;
-  }
-  .hero .container .left h1 {
-    font-size: 1.8rem;
-  }
-  .hero .container .right {
-    width: 100%;
-  }
-  .hero .container .right img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
   }
 }
 nav.openNav {
