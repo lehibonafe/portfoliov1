@@ -145,14 +145,13 @@ nav {
     .static {
       color: $primary-color;
       font-size: 30px;
-      width: 100px;
+      width: 79px;
       overflow: hidden;
     }
     .dynamic {
       height: 90px;
       line-height: 90px;
       overflow: hidden;
-      font-weight: bold;
     }
     li {
       list-style-type: none;
@@ -199,13 +198,14 @@ nav {
     max-width: 700px;
     height: auto;
     padding: 0 20px;
+    margin-top: 50px;
   }
 
   .heading h1 {
     font-size: 6vh;
   }
   .heading p {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .heading .btn {
     margin-top: 25px;
@@ -219,8 +219,6 @@ nav {
       text-decoration: none;
       background-color: $primary-color;
       transition: 0.3s;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
       &:hover {
         color: $tertiary-color;
@@ -298,7 +296,7 @@ nav {
       p {
         line-height: 30px;
         color: $sub-color;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 100;
       }
       .name {
@@ -414,8 +412,8 @@ nav {
   }
 }
 .contact {
-  padding: 150px 0 0;
-  margin-top: 60px;
+  padding: 65px 0 0;
+  margin-top: 170px;
   width: 100%;
   position: relative;
   height: auto;
@@ -433,8 +431,8 @@ nav {
     justify-content: space-evenly;
   }
   form {
-    max-width: 400px;
-    padding: 0 20px;
+    max-width: 450px;
+    padding: 0 10px;
 
     label {
       color: $secondary-color;
@@ -448,7 +446,7 @@ nav {
       box-sizing: border-box;
       color: $primary-color;
       background-color: #f5faff;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     input[type="submit"] {
@@ -472,7 +470,7 @@ nav {
       border: 1px solid $tertiary-color;
       color: $primary-color;
       background-color: #f5faff;
-       font-size: 1.1rem;
+       font-size: 1rem;
     }
   }
 
@@ -539,6 +537,10 @@ nav {
       font-size: 1.2rem;
       padding: 0 15px 0 0;
       color: $sub-color;
+
+      &:hover {
+        color: $tertiary-color;
+      }
     }
     .divider {
       margin: 0 20px;
@@ -575,10 +577,9 @@ nav {
       flex-direction: column;
       width: 100%;
       height: 100%;
-      margin-top: 24px;
 
       li {
-        margin-top: 100px;
+        margin-top: 70px;
 
       }
     }
@@ -600,9 +601,16 @@ nav {
     }
   }
 }
+@media (max-width: 878px) {
+  .contact {
+    .footer {
+      margin-top: 80px;
+    }
+  }
+}
 
 nav.openNav {
-  height: 100%;
+  height: 60%;
 
   
 }
