@@ -375,8 +375,8 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
 }
 
 .contact {
-  padding: 100px 0 0;
-  margin-top: 150px;
+  padding: 150px 0 0;
+  margin-top: 60px;
   width: 100%;
   position: relative;
   height: auto;
@@ -385,7 +385,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   max-width: 1300px;
   margin: auto;
   padding: 0 30px;
-  height: 700px;
+  height: 600px;
 }
 .contact .wrap {
   margin-top: 35px;
@@ -452,52 +452,49 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   margin-top: 23px;
 }
 .contact .details .header {
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 3px;
   font-weight: bold;
   color: #155e75;
 }
 .contact .details .info {
-  font-size: 0.9rem;
-  color: #082f49;
-}
-.contact .details .info p {
   margin-top: 10px;
+  font-size: 1rem;
+  color: #082f49;
+  display: flex;
+  flex-direction: column;
+}
+.contact .details .info span {
+  padding-top: 7px;
 }
 .contact .details .info a {
   color: #082f49;
+  text-decoration: none;
 }
-.contact .details .social-media {
-  margin-top: 30px;
+.contact .details .info i {
+  font-size: 1.2rem;
+  margin-right: 20px;
 }
-.contact .details .social-media p {
-  font-size: 18px;
-}
-.contact .details .social-media .links {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.contact .details .social-media .links div:nth-child(2),
-.contact .details .social-media .links div:nth-child(3) {
-  margin-left: 10px;
-}
-.contact .details .social-media .links a {
-  color: #082f49;
-  font-size: 2.4rem;
-}
-.contact .details .social-media .links a:hover {
-  color: #06b6d4;
-}
-.contact .wave {
-  margin-top: 20px;
+.contact .footer {
   width: 100%;
+  height: 70px;
+  padding: 10px;
   position: absolute;
-  z-index: -1;
+  background-color: #082f49;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e0f2fe;
 }
-.contact .wave #wave {
-  bottom: 0;
-  position: absolute;
+.contact .footer .icons a {
+  color: #e0f2fe;
+  font-size: 1.2rem;
+  padding: 0 15px 0 0;
+  color: #e0f2fe;
+}
+.contact .footer .divider {
+  margin: 0 20px;
 }
 
 @media (max-width: 676px) {

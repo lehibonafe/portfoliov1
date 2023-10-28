@@ -414,8 +414,8 @@ nav {
   }
 }
 .contact {
-  padding: 100px 0 0;
-  margin-top: 150px;
+  padding: 150px 0 0;
+  margin-top: 60px;
   width: 100%;
   position: relative;
   height: auto;
@@ -424,7 +424,7 @@ nav {
     max-width: 1300px;
     margin: auto;
     padding: 0 30px;
-    height: 700px;
+    height: 600px;
   }
   .wrap {
     margin-top: 35px;
@@ -495,59 +495,56 @@ nav {
     padding: 0 20px;
     margin-top: 23px;
     .header {
-      font-size: 0.9rem;
+      font-size: 1rem;
       letter-spacing: 3px;
       font-weight: bold;
       color: $secondary-color;
     }
     .info {
-      font-size: 0.9rem;
+      margin-top: 10px;
+      font-size: 1rem;
       color: $primary-color;
-      p {
-        margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      span {
+        padding-top: 7px;
       }
       a {
         color: $primary-color;
+        text-decoration: none;
+      }
+      i {
+        font-size: 1.2rem;
+        margin-right: 20px;
       }
     }
 
-    .social-media {
-      margin-top: 30px;
-      p {
-        font-size: 18px;
-      }
-      .links {
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
 
-        div:nth-child(2),
-        div:nth-child(3) {
-          margin-left: 10px;
-        }
-
-        a {
-          color: $primary-color;
-          font-size: 2.4rem;
-
-          &:hover {
-            color: $tertiary-color;
-          }
-        }
-      }
-    }
   }
 
-  .wave {
-    margin-top: 20px;
+  .footer {
     width: 100%;
+    height: 70px;
+    padding: 10px;
     position: absolute;
-    z-index: -1;
+    background-color: $primary-color;    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $sub-color;
 
-    #wave {
-      bottom: 0;
-      position: absolute;
+    .icons a {
+      color: $sub-color;
+      font-size: 1.2rem;
+      padding: 0 15px 0 0;
+      color: $sub-color;
     }
+    .divider {
+      margin: 0 20px;
+    }
+
+   
   }
 }
 @media (max-width: 676px) {
