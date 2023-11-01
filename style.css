@@ -335,7 +335,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
 }
 .projects .container .title {
   text-align: right;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-right: 16px;
   color: #e0f2fe;
   font-size: 1rem;
@@ -358,7 +358,7 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  bottom: 22px;
+  bottom: 20px;
   right: 5px;
 }
 .projects .container a {
@@ -367,16 +367,16 @@ nav .menubar .container span:nth-child(5), nav .menubar .container span:nth-chil
   color: #e0f2fe;
 }
 .projects .container a:hover {
-  color: #155e75;
+  color: #06b6d4;
 }
 .projects .container .demo {
   margin: 0 10px;
 }
 .projects .container .demo a {
-  background-color: #06b6d4;
+  background-color: #082f49;
 }
 .projects .container .code a {
-  background-color: #06b6d4;
+  background-color: #082f49;
 }
 
 .contact {
